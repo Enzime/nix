@@ -67,7 +67,7 @@ struct FetchSettings : public Config
     Setting<bool> allowDirty{this, true, "allow-dirty",
         "Whether to allow dirty Git/Mercurial trees."};
 
-    Setting<bool> warnDirty{this, true, "warn-dirty",
+    Setting<bool> warnDirty{this, false, "warn-dirty",
         "Whether to warn about dirty Git/Mercurial trees."};
 
     Setting<std::string> flakeRegistry{this, "https://channels.nixos.org/flake-registry.json", "flake-registry",
